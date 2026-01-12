@@ -1,6 +1,6 @@
 ### 🔥 Advanced Agentic RAG Diagram
 
-```markdown
+
 ## 🧠 Agentic RAG Architecture
 
 ```mermaid
