@@ -2,6 +2,8 @@
 
 ```markdown
 ## 🧠 Agentic RAG Architecture
+
+```mermaid
 flowchart TD
     U[🧑 User]
     API[⚡ FastAPI]
@@ -32,7 +34,7 @@ flowchart TD
     Agent --> API
     API -->|Answer + Sources| U
 
-```mermaid
+
 
 ## 📌 Overview
 (short description)
