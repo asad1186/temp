@@ -1,10 +1,59 @@
-Here is a sample flowchart:
+### 🔥 Advanced Agentic RAG Diagram
+
+```markdown
+## 🧠 Agentic RAG Architecture
+flowchart TD
+    U[🧑 User]
+    API[⚡ FastAPI]
+    
+    subgraph Agent[🧠 AI Agent]
+        R[🔀 Routing Prompt]
+        M[💾 Session Memory]
+    end
+
+    subgraph RAG[📚 Retrieval Pipeline]
+        E[📐 Embeddings]
+        V[📦 FAISS Index]
+        D[📄 PDFs / Docs]
+    end
+
+    LLM[🤖 OpenAI / Azure OpenAI]
+
+    U -->|Query| API
+    API --> Agent
+    Agent --> R
+    R -->|Direct| LLM
+    R -->|Tool| RAG
+    RAG --> V
+    V --> D
+    RAG --> Agent
+    LLM --> Agent
+    Agent --> M
+    Agent --> API
+    API -->|Answer + Sources| U
 
 ```mermaid
-flowchart TD
-    A[Start] --> B{Decision};
-    B --> C{Decision 2};
-C --> D[Result 1];
-C --> E[Result 2];
-    B --> D;
-    D & E --> F[End];
+
+## 📌 Overview
+(short description)
+
+## 🏗️ Architecture Overview
+(2–3 lines explanation)
+
+## 🧠 Agentic RAG Architecture
+👉 PASTE DIAGRAM HERE 👈
+
+## 🧠 Agent Design
+(text)
+
+## 📚 RAG Pipeline
+(text)
+
+## 🚀 API
+(text)
+
+## ⚠️ Limitations
+(text)
+
+## 🔮 Future Improvements
+(text)
